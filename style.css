@@ -198,7 +198,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #00089d;
-  animation: typing 3.5s steps(20, end) infinite alternate,
+  animation: typing 4s steps(50, end) infinite alternate,
   blink-caret .75s step-end infinite;
 }
 
@@ -1213,4 +1213,34 @@ padding: 40px 0;  / Giữ padding dọc */
   .timeline-item.right::after {
     left: 25px;
   }
+}
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #00ff88;
 }
