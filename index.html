@@ -15,9 +15,9 @@
         loop 
         muted 
         playsinline
-        poster="https://cdn.pixabay.com/video/2016/11/04/6266-190550868_tiny.jpg">
+        poster="https://cdn.pixabay.com/video/2022/11/04/137666-767473341_tiny.jpg">
     
-        <source src="https://cdn.pixabay.com/video/2016/11/04/6266-190550868_large.mp4" type="video/mp4">
+        <source src="https://cdn.pixabay.com/video/2022/11/04/137666-767473341_large.mp4" type="video/mp4">
     </video>
 
     <!--HEADER-->
@@ -33,7 +33,11 @@
                 </li>
                 
                 <li>
-                    <a href="#my-skill"><i class='bx bxs-user-circle'></i>  MY SKILL</a>
+                    <a href="#timeline"><i class='bx bxs-time'></i> TIMELINE</a>
+                </li>
+
+                <li>
+                    <a href="#my-skill"><i class='bx bxs-rocket'></i>  MY SKILL</a>
                 </li>
                     
                 <li>
@@ -55,7 +59,7 @@
             <div class="home-container">
                 <!--Avatar Image-->
                 
-                <section class="profile-picture-card">
+                <section class="profile-picture-card" data-animate="fade-left">
                     <img src="img/avatar.png" alt="">
                     <div class="profile-overlay">
                         <div class="profile-info">
@@ -65,7 +69,7 @@
                 </section>
                 
                 <!--INFORMATION-->
-                <section class="information-card">
+                <section class="information-card" data-animate="fade-right">
                     <h1>Hey there! I'm Quang Trung — most people know me as Tommy.</h1>
                     <h2 class="typing-effect">Website Developer</h2>
                     <p>
@@ -74,7 +78,7 @@
                         I am a naturally curious learner, always seeking new ways to optimize performance and make the web a more enjoyable place for everyone.
                     </p>
 
-                    <h2>My slogan</h1>
+                    <h2>My slogan</h2>
                     <div class="slogan">
                         <span>Sometimes, you gotta say “Fuck it”, just do it</span>
                     </div>
@@ -82,11 +86,11 @@
                     <div class="contact-info">
                         <span><i class='bx bxs-map' ></i> Thu Duc, HCM, VIET NAM</span>
                         <span><i class='bx bxs-phone-call' ></i>0123456789</span>
-                        <span></span>
                     </div>
                     <div class="call-to-action">
                         <button class="btn-view-project">View My projects</button>
                         <button class="btn-contact-for-work">Contact for work</button>
+                        <a href="cv.pdf" download class="btn-download-cv">Download CV</a>
                     </div>
                     
                     <hr/>
@@ -135,7 +139,7 @@
                             <div class="info-item">
                                 <div class="info-icon"><i class='bx bxs-book-alt'></i></div>
                                 <div class="info-text">
-                                    <b>GPA:</b> 2.8/4.0
+                                    <b>GPA:</b> 3.5/4.0
                                 </div>
                             </div>
                         </div>
@@ -165,7 +169,7 @@
                             I got into computers quite early — around the age of six — when a friend invited me to play internet games. From that moment, I thought to myself: “Wow, computers are amazing!” That was when my passion for exploring technology first began to grow.
                             However, my family wasn't well-off back then. It wasn't until sixth grade that I finally owned my first computer — an old machine with just 2GB of RAM, running Linux because it was too weak to handle Windows.
                             Thanks to that underpowered computer, I learned how to optimize everything — games, applications, and even the system itself — just to make things run smoothly. Those experiences inspired a dream in me:
-                            <Strong><em>“When I grow up, I'll study computer science and create highly optimized applications, so that people like my younger self won't have to struggle just to run a simple program."</em></Strong>
+                            <strong><em>“When I grow up, I'll study computer science and create highly optimized applications, so that people like my younger self won't have to struggle just to run a simple program."</em></strong>
                             That's how my journey with technology began — a journey built on curiosity, passion, and overcoming limitations.
                         </p>
                     </div>
@@ -175,7 +179,61 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section id="timeline" class="timeline-section">
+            <div class="timeline-container">
+                <h2>LIFE TIMELINE</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <img src="img/cap1.jpg" alt="Primary School" class="timeline-img">
+                            <div class="timeline-text">
+                                <h4>2011 - Started Primary School (Grade 1)</h4>
+                                <p>When I started first grade, I was introduced to the world of computers and the internet for the first time, mostly through playing games with my friends.</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <img src="img/c2_resize.png" alt="Sixth Grade" class="timeline-img">
+                            <div class="timeline-text">
+                                <h4>2017 - Sixth Grade Milestone</h4>
+                                <p>Received my first computer, an old Linux machine. Learned system optimization and sparked deeper interest in technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <img src="img/friend_football.jpg" alt="High School" class="timeline-img">
+                            <div class="timeline-text">
+                                <h4>2020 - Entered High School</h4>
+                                <p>Started high school and began self-learning programming basics, focusing on C++ and problem-solving.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <img src="img/totnghiep.jpg" alt="Graduation" class="timeline-img">
+                            <div class="timeline-text">
+                                <h4>2023 - Graduated High School & Entered University</h4>
+                                <p>Graduated high school and enrolled in University of Transport Ho Chi Minh City (UTH) majoring in Information Technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <img src="img/startup house.jpg" alt="University" class="timeline-img">
+                            <div class="timeline-text">
+                                <h4>Present - University Life</h4>
+                                <p>Currently pursuing IT degree at UTH with GPA 3.5/4.0, building projects in web development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--MY SKILL SECTION-->
@@ -184,8 +242,9 @@
                 <h2>MY SKILLS</h2>
                 
                 <div class="skills-grid">
+                    
 
-                    <div class="skill-category">
+                    <div class="skill-category" data-animate="fade-up">
                         <h3><i class="bx bx-code-block"></i> Frontend</h3>
 
                         <div class="skill-item">
@@ -226,16 +285,16 @@
 
                         <div class="skill-item">
                             <div class="skill-info">
-                                <img src="img/Logo framework/Nextjs.png" alt="NEXJS" class="icon">
+                                <img src="img/Logo framework/Nextjs.png" alt="NEXTJS" class="icon">
                                 <span>NEXTJS</span>
-                                </div>
+                            </div>
                             <div class="progress-bar">
                                 <div class="progress" data-width="80%"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-category">
+                    <div class="skill-category" data-animate="fade-up">
                         <h3><i class="bx bx-server"></i> Programming Language</h3>
 
                         <div class="skill-item">
@@ -276,7 +335,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-category">
+                    <div class="skill-category" data-animate="fade-up">
                         <h3><i class="bx bx-server"></i> Framework</h3>
 
                         <div class="skill-item">
@@ -300,14 +359,15 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <img src="img/Logo framework/asp.png" alt="ASP.NET" class="logo">
-                                </div>
+                                <span>ASP.NET</span>
+                            </div>
                             <div class="progress-bar">
                                 <div class="progress" data-width="70%"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="skill-category">
+                    <div class="skill-category" data-animate="fade-up">
                         <h3><i class="bx bx-data"></i> Database</h3>
 
                         <div class="skill-item">
@@ -329,7 +389,8 @@
                         </div>
                     </div>
                     
-                </div> <div class="other-tools">
+                </div> 
+                <div class="other-tools">
                     <h3 class="other-title">Other Tools & Technologies</h3>
                     <div id="stage">
                         <div class="bubble core" id="core-git">
@@ -351,23 +412,26 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
                         </div>
                         <div class="bubble small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="TailwindCSS" />
-                        </div>
-                        <div class="bubble small">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
                         </div>
                         <div class="bubble small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                        </div>          
+                        <div class="bubble small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                        </div>  
+                        <div class="bubble small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" />
+                        </div>
+                         <div class="bubble small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg" />
                         </div>
                         <div class="bubble small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" />
-                        </div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg" />
+                        </div>          
                         <div class="bubble small">
-                            <img src="Vite.svg" alt="Vite" />
-                        </div>
-                        <div class="bubble small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
-                        </div>
+                            <img src="   https://cdn-icons-png.flaticon.com/512/12222/12222560.png " />
+                        </div>   
                     </div>
                 </div>
             </div> 
@@ -375,21 +439,162 @@
 
         <!--MY PROJECT-->
         <section id="my-project" class="my-project-section">
-
+            <div class="project-container">
+                <h2>MY PROJECTS</h2>
+                <div class="project-grid">
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/bds.png" alt="Real Estate System Website">
+                        <div class="project-info">
+                            <h3>Real Estate System Website</h3>
+                            <p>A comprehensive online platform for managing real estate properties, enabling users to list, search, buy, sell, and rent properties with advanced administrative features for streamlined operations.</p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LilMeoMeo14/HeThong_BatDongSan" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                                <a href="https://youtu.be/aGFoGE67-t0" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/metasploit.webp" alt="Metasploit Demo">
+                        <div class="project-info">
+                            <h3>Metasploit Demo: Windows Exploitation via Malicious File</h3>
+                            <p>A hands-on cybersecurity demonstration showcasing vulnerability exploitation on Windows systems using Metasploit Framework through carefully crafted malicious files.</p>
+                            <div class="tech-tags">
+                                <span>Metasploit Framework</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LilMeoMeo14/metasploit_project" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                                <a href="https://drive.google.com/file/d/1J5mb4j5Cx9JDjgU1M1PCg8Mug0dsv8JP/view?usp=sharing" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/chatroom-rtc.png" alt="Real-Time Video Chat App">
+                        <div class="project-info">
+                            <h3>Real-Time Video Chat and Meeting App (WebRTC)</h3>
+                            <p>A robust web application enabling seamless peer-to-peer video and audio communication, complete with text chat, multi-participant support, and dynamic room management using WebRTC technology.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Agora SDK</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LilMeoMeo14/ChatRoom_RTC" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                                <a href="https://webrtc-chatroom.onrender.com/lobby.html" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/car-detect-acident.png" alt="Traffic Accident Detection System">
+                        <div class="project-info">
+                            <h3>Intelligent Traffic Accident Detection System using YOLOv8</h3>
+                            <p>An advanced AI system that analyzes live video feeds from surveillance cameras to detect traffic accidents in real-time, utilizing object detection and activity recognition for immediate response.</p>
+                            <div class="tech-tags">
+                                <span>Flask</span>
+                                <span>YOLOv8</span>
+                                <span>OpenCV</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LMLTech/Yolov8-accident-detection" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/trefund.png" alt="TreFund Platform">
+                        <div class="project-info">
+                            <h3>TreFund — Decentralized Fundraising Platform for Startups</h3>
+                            <p>A blockchain-powered crowdfunding solution that enables startups to raise funds securely through smart contracts, providing transparent contributions and milestone-based releases for investors.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React.js</span>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LilMeoMeo14/TreFund_Introduce" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-animate="fade-up">
+                        <img src="img/project img/ccm.png" alt="Carbon Credit Marketplace">
+                        <div class="project-info">
+                            <h3>Carbon Credit Marketplace for EV Owners</h3>
+                            <p>A blockchain-based platform allowing electric vehicle owners to earn, trade, and sell carbon credits based on sustainable driving habits, promoting eco-friendly transportation.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React.js</span>
+                                <span>Next.js</span>
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>Spring Security</span>
+                                <span>Spring Data (JPA, JDBC)</span>
+                                <span>Microservices</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/LilMeoMeo14/CarbonCreditMarketplace" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--CONTACT ME SECTION-->
         <section id="contact-me" class="contact-me-section">
-
+            <div class="contact-container">
+                <h2>CONTACT ME</h2>
+                <div class="contact-content">
+                    <div class="contact-left" data-animate="fade-left">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class='bx bxs-envelope'></i>
+                                <span>tommy.web3hub@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class='bx bxs-phone'></i>
+                                <span>0123456789</span>
+                            </div>
+                            <div class="info-item">
+                                <i class='bx bxs-map'></i>
+                                <span>Thu Duc</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/LilMeoMeo14"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.facebook.com/luong.uc.quang.trung/"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.linkedin.com/in/trung-quang-983698213/"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://x.com/tommy_vbuilder"><i class='bx bxl-twitter'></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right" data-animate="fade-right">
+                        <form id="contact-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--FOOTER-->
     <footer>
-
+        <p>&copy; 2025 Quang Trung (Tommy). All rights reserved.</p>
     </footer>
 
     <!--JS link-->
     <script src="script.js"></script>
 </body>
 </html>
+
