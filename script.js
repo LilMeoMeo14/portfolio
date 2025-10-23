@@ -633,8 +633,8 @@ function updateContent() {
     
     // Update Contact Section
     document.querySelector('#contact-me h2').textContent = t.contact_title;
-    document.querySelector('.contact-left h3').textContent = t.contact_subtitle;
-    document.querySelector('.contact-left > p').textContent = t.contact_desc;
+    document.querySelector('.contact-right h3').textContent = t.contact_subtitle;
+    document.querySelector('.contact-right > p').textContent = t.contact_desc;
     
     document.querySelector('#contact-form input[type="text"]').placeholder = t.form_name;
     document.querySelector('#contact-form input[type="email"]').placeholder = t.form_email;

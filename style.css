@@ -999,17 +999,17 @@ hr {
   flex-wrap: wrap;
 }
 
-.contact-left {
+.contact-right {
   flex: 1;
   text-align: left;
 }
 
-.contact-left h3 {
+.contact-right h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.contact-left p {
+.contact-right p {
   color: #ccc;
   margin-bottom: 2rem;
 }
@@ -1035,6 +1035,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-bottom: 5rem;
 }
 
 #contact-form input,
@@ -1071,6 +1072,25 @@ hr {
   color: #00089d;
   box-shadow: 0 0 20px #221EC4;
 }
+
+/*IMG CONTACT FORM*/
+.contact-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px #221EC4;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #221EC4;
+}
+
+
 
 /* FOOTER */
 footer {
@@ -1255,6 +1275,9 @@ padding: 40px 0;  / Giữ padding dọc */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
 }
+
+
+/*Certificates section*/
 
 .certificates-container {
     max-width: 1300px;
