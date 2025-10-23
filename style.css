@@ -729,7 +729,6 @@ hr {
 }
   /* PostgreSQL */
 
-/* Nếu icon FastAPI là ảnh SVG riêng */
 .skill-info img.icon {
   width: 28px;
   height: 28px;
@@ -1183,6 +1182,8 @@ padding: 40px 0;  / Giữ padding dọc */
   line-height: 1.4;
 }
 
+/*RESPONSIVE BREAKPOINT*/
+
 @media (max-width: 768px) {
   .timeline::after {
     left: 31px;
@@ -1200,7 +1201,7 @@ padding: 40px 0;  / Giữ padding dọc */
   
   .timeline-item.left,
   .timeline-item.right {
-    left: 0;
+    left: 0; /* Reset position */
     text-align: left;
   }
   
@@ -1214,11 +1215,15 @@ padding: 40px 0;  / Giữ padding dọc */
     left: 25px;
   }
 }
+
+/* ====================================
+   LANGUAGE SWITCHER BUTTON
+   ==================================== */
 .language-switcher {
-    position: fixed;
+    position: fixed; /* Fixed để luôn hiển thị */
     top: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 1000; /* Nằm trên các element khác */
     display: flex;
     gap: 10px;
 }
@@ -1232,15 +1237,66 @@ padding: 40px 0;  / Giữ padding dọc */
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Glassmorphism */
 }
 
 .lang-btn:hover {
     background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Nâng nhẹ khi hover */
 }
 
 .lang-btn.active {
     background: rgba(255, 255, 255, 0.3);
-    border-color: #00ff88;
+    border-color: #00ff88; /* Highlight button active */
+}
+.certificates-section {
+    padding: 120px 10% 100px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+}
+
+.certificates-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    padding: 60px 80px;
+    transition: all 0.4s ease;
+}
+
+.certificates-container:hover {
+    box-shadow: 0 0 45px #221EC4;
+    border-color: #221EC4;
+    transform: translateY(-3px);
+}
+
+.certificates-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.certificates-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00089d;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.certificates-section p {
+    color: #ccc;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
 }

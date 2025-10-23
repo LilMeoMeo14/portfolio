@@ -380,6 +380,10 @@ const translations = {
         skills_database: "Database",
         skills_other_title: "Other Tools & Technologies",
         
+        //Certificated
+        certificates_title: "CERTIFICATES",
+        certificates_text: "Currently, I do not have any certificates.",
+
         // Projects Section
         projects_title: "MY PROJECTS",
         project_1_title: "Real Estate System Website",
@@ -471,6 +475,10 @@ const translations = {
         skills_database: "Cơ sở dữ liệu",
         skills_other_title: "Công cụ & Công nghệ khác",
         
+        // Certificated
+        certificates_title: "CHỨNG CHỈ",
+        certificates_text: "Hiện tại tôi chưa có chứng chỉ nào, tôi sẽ bổ sung trong tương lai",
+
         // Projects Section
         projects_title: "DỰ ÁN CỦA TÔI",
         project_1_title: "Website Hệ thống Bất động sản",
@@ -599,6 +607,12 @@ function updateContent() {
     
     document.querySelector('.other-title').textContent = t.skills_other_title;
     
+    //Update Certificates Section
+    if (document.querySelector('#certificates')) {
+        document.querySelector('#certificates h2').textContent = t.certificates_title;
+        document.querySelector('#certificates p').textContent = t.certificates_text;
+    }
+
     // Update Projects Section
     document.querySelector('#my-project h2').textContent = t.projects_title;
     
