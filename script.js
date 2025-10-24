@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Smooth scrolling for nav links
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const target = document.querySelector(targetId);
             target.scrollIntoView({ behavior: 'smooth' });
-            
+
             // Update active class
             document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
             this.classList.add('active');
@@ -111,17 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
             // Giải pháp tốt hơn là lưu vị trí của core sau khi layoutCores()
             const transform = window.getComputedStyle(el).transform;
             if (transform && transform !== 'none') {
-                 const matrix = new DOMMatrixReadOnly(transform);
-                 return { cx: matrix.m41 + s.width / 2, cy: matrix.m42 + s.height / 2, r: s.width / 2 };
+                const matrix = new DOMMatrixReadOnly(transform);
+                return { cx: matrix.m41 + s.width / 2, cy: matrix.m42 + s.height / 2, r: s.width / 2 };
             }
             // Fallback nếu transform chưa sẵn sàng
             return { cx: s.left - r.left + s.width / 2, cy: s.top - r.top + s.height / 2, r: s.width / 2 };
         }
-        
+
         let coreCache = [];
         function updateCoreObstacles() {
-             coreCache = [coreA, coreB, coreC].map(rect);
-             return coreCache;
+            coreCache = [coreA, coreB, coreC].map(rect);
+            return coreCache;
         }
         updateCoreObstacles();
         window.addEventListener('resize', updateCoreObstacles); // Cập nhật vị trí core khi resize
@@ -325,7 +325,7 @@ const translations = {
         nav_skill: "MY SKILL",
         nav_project: "MY PROJECTS",
         nav_contact: "CONTACT ME",
-        
+
         // Home Section
         home_greeting: "Hey there! I'm Quang Trung — most people know me as Tommy.",
         home_title: "Website Developer",
@@ -337,7 +337,7 @@ const translations = {
         btn_contact: "Contact for work",
         btn_download_cv: "Download CV",
         social_follow: "Follow to know more about me:",
-        
+
         // About Me Section
         about_title: "ABOUT ME",
         about_info_title: "Information:",
@@ -358,7 +358,7 @@ const translations = {
         about_story_text: "I got into computers quite early — around the age of six — when a friend invited me to play internet games. From that moment, I thought to myself: \"Wow, computers are amazing!\" That was when my passion for exploring technology first began to grow. However, my family wasn't well-off back then. It wasn't until sixth grade that I finally owned my first computer — an old machine with just 2GB of RAM, running Linux because it was too weak to handle Windows. Thanks to that underpowered computer, I learned how to optimize everything — games, applications, and even the system itself — just to make things run smoothly. Those experiences inspired a dream in me:",
         about_story_quote: "\"When I grow up, I'll study computer science and create highly optimized applications, so that people like my younger self won't have to struggle just to run a simple program.\"",
         about_story_end: "That's how my journey with technology began — a journey built on curiosity, passion, and overcoming limitations.",
-        
+
         // Timeline Section
         timeline_title: "LIFE TIMELINE",
         timeline_1_year: "2011 - Started Primary School (Grade 1)",
@@ -371,7 +371,7 @@ const translations = {
         timeline_4_desc: "Graduated high school and enrolled in University of Transport Ho Chi Minh City (UTH) majoring in Information Technology.",
         timeline_5_year: "Present - University Life",
         timeline_5_desc: "Currently pursuing IT degree at UTH with GPA 3.5/4.0, building projects in web development.",
-        
+
         // Skills Section
         skills_title: "MY SKILLS",
         skills_frontend: "Frontend",
@@ -379,7 +379,7 @@ const translations = {
         skills_framework: "Framework",
         skills_database: "Database",
         skills_other_title: "Other Tools & Technologies",
-        
+
         //Certificated
         certificates_title: "CERTIFICATES",
         certificates_text: "Currently, I do not have any certificates.",
@@ -398,7 +398,7 @@ const translations = {
         project_5_desc: "A blockchain-powered crowdfunding solution that enables startups to raise funds securely through smart contracts, providing transparent contributions and milestone-based releases for investors.",
         project_6_title: "Carbon Credit Marketplace for EV Owners",
         project_6_desc: "A blockchain-based platform allowing electric vehicle owners to earn, trade, and sell carbon credits based on sustainable driving habits, promoting eco-friendly transportation.",
-        
+
         // Contact Section
         contact_title: "CONTACT ME",
         contact_subtitle: "Get in Touch",
@@ -407,11 +407,11 @@ const translations = {
         form_email: "Your Email",
         form_message: "Your Message",
         form_submit: "Send Message",
-        
+
         // Footer
         footer_text: "© 2025 Quang Trung (Tommy). All rights reserved."
     },
-    
+
     vi: {
         // Navigation
         nav_home: "TRANG CHỦ",
@@ -420,19 +420,19 @@ const translations = {
         nav_skill: "KỸ NĂNG",
         nav_project: "DỰ ÁN",
         nav_contact: "LIÊN HỆ",
-        
+
         // Home Section
         home_greeting: "Chào bạn! Tôi là Quang Trung — mọi người thường gọi tôi với nickname là Tommy.",
         home_title: "Lập Trình Viên Website",
         home_intro: "Đam mê của tôi nằm ở giao điểm giữa công nghệ và trải nghiệm người dùng. Tôi tập trung vào việc xây dựng các trang web trực quan không chỉ hoạt động tốt mà còn mang lại cảm giác tuyệt vời khi sử dụng. Tôi là một người học hỏi tò mò, luôn tìm kiếm những cách mới để tối ưu hóa hiệu suất và làm cho web trở thành một nơi thú vị hơn cho mọi người.",
         home_slogan_title: "Phương châm sống của tôi",
-        home_slogan_text: "Đôi lúc, cuộc đời phải khiến bạn phải nói \"TRỜI ƠI\", nhưng thôi kệ cứ làm việc hiện tại tốt nhất thôi",
+        home_slogan_text: "Sometimes, you gotta say \"Fuck it\", just do it",
         home_location: "Thủ Đức, HCM, VIỆT NAM",
         btn_view_project: "Xem dự án của tôi",
         btn_contact: "Liên hệ công việc",
         btn_download_cv: "Tải CV",
         social_follow: "Theo dõi để biết thêm về tôi:",
-        
+
         // About Me Section
         about_title: "Sơ lược về tôi",
         about_info_title: "Thông tin:",
@@ -451,9 +451,9 @@ const translations = {
         hobby_4: "Bóng đá",
         about_story_title: "Câu chuyện cuộc đời tôi",
         about_story_text: "Tôi tiếp xúc với máy tính khá sớm — khoảng sáu tuổi — khi một người bạn rủ tôi chơi game internet. Từ thời điểm đó, tôi tự nghĩ: \"Wow, máy tính thật tuyệt vời!\" Đó là khi niềm đam mê khám phá công nghệ của tôi bắt đầu nảy nở. Tuy nhiên, gia đình tôi lúc đó không khá giả lắm. Mãi đến lớp 6 tôi mới có chiếc máy tính đầu tiên — một chiếc máy cũ với chỉ 2GB RAM, chạy Linux vì nó quá yếu để chạy Windows. Nhờ chiếc máy tính yếu ớt đó, tôi đã học cách tối ưu hóa mọi thứ — game, ứng dụng và thậm chí cả hệ thống — chỉ để mọi thứ chạy mượt mà. Những trải nghiệm đó đã truyền cảm hứng cho một ước mơ trong tôi:",
-        about_story_quote: "\"Khi lớn lên, tôi sẽ học công nghệ thông tin và tạo ra các ứng dụng được tối ưu hóa cao, để những người như tôi lúc nhỏ không phải vật lộn chỉ để chạy một chương trình đơn giản.\"" ,
+        about_story_quote: "\"Khi lớn lên, tôi sẽ học công nghệ thông tin và tạo ra các ứng dụng được tối ưu hóa cao, để những người như tôi lúc nhỏ không phải vật lộn chỉ để chạy một chương trình đơn giản.\"",
         about_story_end: " Đó là cách hành trình công nghệ của tôi bắt đầu — một hành trình được xây dựng trên sự tò mò, đam mê và vượt qua những giới hạn.",
-        
+
         // Timeline Section
         timeline_title: "CÁC CỘT MỐC TRONG CUỘC ĐỜI TÔI",
         timeline_1_year: "2011 - Bắt đầu Tiểu học (Lớp 1)",
@@ -466,7 +466,7 @@ const translations = {
         timeline_4_desc: "Tốt nghiệp trung học và thi đậu trường học Đại học Giao thông Vận tải TP.HCM (UTH) chuyên ngành Công nghệ Thông tin.",
         timeline_5_year: "Hiện tại - Đời sống Đại học",
         timeline_5_desc: "Hiện đang theo học ngành CNTT tại UTH với GPA 3.5/4.0, xây dựng các dự án phát triển web.",
-        
+
         // Skills Section
         skills_title: "KỸ NĂNG CỦA TÔI",
         skills_frontend: "Frontend",
@@ -474,7 +474,7 @@ const translations = {
         skills_framework: "Framework",
         skills_database: "Cơ sở dữ liệu",
         skills_other_title: "Công cụ & Công nghệ khác",
-        
+
         // Certificated
         certificates_title: "CHỨNG CHỈ",
         certificates_text: "Hiện tại tôi chưa có chứng chỉ nào, tôi sẽ bổ sung trong tương lai",
@@ -493,7 +493,7 @@ const translations = {
         project_5_desc: "Một giải pháp gây quỹ cộng đồng dựa trên blockchain cho phép các startup huy động vốn an toàn thông qua hợp đồng thông minh, cung cấp đóng góp minh bạch và giải ngân theo cột mốc cho nhà đầu tư.",
         project_6_title: "Sàn Giao dịch Tín chỉ Carbon cho Chủ xe Điện",
         project_6_desc: "Một nền tảng dựa trên blockchain cho phép chủ xe điện kiếm, giao dịch và bán tín chỉ carbon dựa trên thói quen lái xe bền vững, thúc đẩy giao thông thân thiện với môi trường.",
-        
+
         // Contact Section
         contact_title: "LIÊN HỆ VỚI TÔI",
         contact_subtitle: "Kết nối",
@@ -502,7 +502,7 @@ const translations = {
         form_email: "Email của bạn",
         form_message: "Tin nhắn của bạn",
         form_submit: "Gửi tin nhắn",
-        
+
         // Footer
         footer_text: "© 2025 Quang Trung (Tommy). Tất cả quyền được bảo lưu."
     }
@@ -521,7 +521,7 @@ function switchLanguage(lang) {
 // Hàm cập nhật nội dung
 function updateContent() {
     const t = translations[currentLang];
-    
+
     // Update Navigation
     document.querySelectorAll('nav a').forEach((link, index) => {
         const keys = ['nav_home', 'nav_about', 'nav_timeline', 'nav_skill', 'nav_project', 'nav_contact'];
@@ -532,12 +532,12 @@ function updateContent() {
             link.innerHTML += ' ' + t[keys[index]];
         }
     });
-    
+
     // Update Home Section
     document.querySelector('.information-card h1').textContent = t.home_greeting;
     document.querySelector('.information-card h2.typing-effect').textContent = t.home_title;
     document.querySelector('.information-card > p').textContent = t.home_intro;
-    
+
     // Lấy h2 không có class typing-effect (đó là "My slogan")
     const allH2 = document.querySelectorAll('.information-card h2');
     allH2.forEach((h2) => {
@@ -545,43 +545,43 @@ function updateContent() {
             h2.textContent = t.home_slogan_title;
         }
     });
-    
+
     document.querySelector('.slogan span').textContent = t.home_slogan_text;
-    
+
     const contactInfo = document.querySelectorAll('.information-card .contact-info span');
     contactInfo[0].innerHTML = `<i class='bx bxs-map'></i> ${t.home_location}`;
-    
+
     document.querySelector('.btn-view-project').textContent = t.btn_view_project;
     document.querySelector('.btn-contact-for-work').textContent = t.btn_contact;
     document.querySelector('.btn-download-cv').textContent = t.btn_download_cv;
     document.querySelector('.social-links span').textContent = t.social_follow;
-    
+
     // Update About Me Section
     document.querySelector('#about-me h2').textContent = t.about_title;
     document.querySelector('.about-left h3:nth-of-type(1)').textContent = t.about_info_title;
-    
+
     const infoItems = document.querySelectorAll('.info-item .info-text');
     infoItems[0].innerHTML = `<b>${t.about_name_label}</b> ${t.about_name_value}`;
     infoItems[1].innerHTML = `<b>${t.about_dob_label}</b> ${t.about_dob_value}`;
     infoItems[2].innerHTML = `<b>${t.about_education_label}</b> ${t.about_education_value}`;
     infoItems[3].innerHTML = `<b>${t.about_gpa_label}</b> ${t.about_gpa_value}`;
-    
+
     document.querySelector('.about-left h3:nth-of-type(2)').textContent = t.about_hobbies_title;
-    
+
     const hobbies = document.querySelectorAll('.hobby-box span');
     hobbies[0].textContent = t.hobby_1;
     hobbies[1].textContent = t.hobby_2;
     hobbies[2].textContent = t.hobby_3;
     hobbies[3].textContent = t.hobby_4;
-    
+
     document.querySelector('.about-left h3:nth-of-type(3)').textContent = t.about_story_title;
-    
+
     const storyText = document.querySelector('.my-story-text');
     storyText.innerHTML = `${t.about_story_text}<strong><em>${t.about_story_quote}</em></strong>${t.about_story_end}`;
-    
+
     // Update Timeline Section
     document.querySelector('#timeline h2').textContent = t.timeline_title;
-    
+
     const timelineItems = document.querySelectorAll('.timeline-item .timeline-text');
     const timelineKeys = [
         ['timeline_1_year', 'timeline_1_desc'],
@@ -590,23 +590,23 @@ function updateContent() {
         ['timeline_4_year', 'timeline_4_desc'],
         ['timeline_5_year', 'timeline_5_desc']
     ];
-    
+
     timelineItems.forEach((item, index) => {
         item.querySelector('h4').textContent = t[timelineKeys[index][0]];
         item.querySelector('p').textContent = t[timelineKeys[index][1]];
     });
-    
+
     // Update Skills Section
     document.querySelector('#my-skill h2').textContent = t.skills_title;
-    
+
     const skillCategories = document.querySelectorAll('.skill-category h3');
     skillCategories[0].innerHTML = `<i class="bx bx-code-block"></i> ${t.skills_frontend}`;
     skillCategories[1].innerHTML = `<i class="bx bx-server"></i> ${t.skills_programming}`;
     skillCategories[2].innerHTML = `<i class="bx bx-server"></i> ${t.skills_framework}`;
     skillCategories[3].innerHTML = `<i class="bx bx-data"></i> ${t.skills_database}`;
-    
+
     document.querySelector('.other-title').textContent = t.skills_other_title;
-    
+
     //Update Certificates Section
     if (document.querySelector('#certificates')) {
         document.querySelector('#certificates h2').textContent = t.certificates_title;
@@ -615,7 +615,7 @@ function updateContent() {
 
     // Update Projects Section
     document.querySelector('#my-project h2').textContent = t.projects_title;
-    
+
     const projects = document.querySelectorAll('.project-card .project-info');
     const projectKeys = [
         ['project_1_title', 'project_1_desc'],
@@ -625,28 +625,28 @@ function updateContent() {
         ['project_5_title', 'project_5_desc'],
         ['project_6_title', 'project_6_desc']
     ];
-    
+
     projects.forEach((project, index) => {
         project.querySelector('h3').textContent = t[projectKeys[index][0]];
         project.querySelector('p').textContent = t[projectKeys[index][1]];
     });
-    
+
     // Update Contact Section
     document.querySelector('#contact-me h2').textContent = t.contact_title;
     document.querySelector('.contact-right h3').textContent = t.contact_subtitle;
     document.querySelector('.contact-right > p').textContent = t.contact_desc;
-    
+
     document.querySelector('#contact-form input[type="text"]').placeholder = t.form_name;
     document.querySelector('#contact-form input[type="email"]').placeholder = t.form_email;
     document.querySelector('#contact-form textarea').placeholder = t.form_message;
     document.querySelector('#contact-form button').textContent = t.form_submit;
-    
+
     // Update Footer
     document.querySelector('footer p').textContent = t.footer_text;
 }
 
 // Khởi tạo khi trang load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updateContent();
 });
 
